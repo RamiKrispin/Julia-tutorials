@@ -50,3 +50,51 @@ str2 = "string 2"
 
 str1 * str2
 "$str1$str2"
+
+# Data structures
+#------------------------------
+# Dictionaries are not ordered
+# Tuples and arrays are ordered
+# Tuples are imutable
+
+# Dictionaries
+
+full_name = Dict("Jimmy" => "Page", "Robert" => "Plant")
+full_name
+
+full_name["Jimmy"]
+
+# Adding value for the dict
+full_name["John"] = "Bonham"
+
+# pop! function delete value for the dict
+pop!(full_name, "John")
+full_name
+
+# Tuples
+mylist = ("one", "two", "three")
+typeof(mylist)
+
+mylist[1]
+mylist
+
+# Arrays
+letters = ["A", "B", "c"]
+numbers = [1, 2, 3]
+
+letters[3]
+letters[3] = "C"
+
+letters[3]
+
+# The push! function add value to the array
+push!(numbers, 4)
+numbers
+pop!(numbers)
+
+# Nested array
+numbers = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+numbers
+
+# rand function create a random set of arrays
+rand(4, 3)
