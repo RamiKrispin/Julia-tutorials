@@ -206,3 +206,13 @@ v
 A = [i + 3 * j for j in 0:2, i in 1:3]
 f(A)
 B = f.(A)
+
+# Packages
+# Installing packages can be done with the following:
+# Pck.add("package_name")
+# Loading package is done with
+# using package_name
+
+Pkg.add("Colors")
+
+using Colors
